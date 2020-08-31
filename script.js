@@ -59,11 +59,11 @@ let person = {
     age: 25,
     favoriteMusic: "Metal"
 };
-
+/*
 let name = person.name;
 let age = person.age;
 let favoriteMusic = person.favoriteMusic;
-
+*/
 console.log(`Hello, ${name}.`);
 console.log(`You are ${age} years old.`);
 console.log(`Your favorite music is ${favoriteMusic}.`);
@@ -72,39 +72,39 @@ console.log(`Your favorite music is ${favoriteMusic}.`);
 
 // same functionality but with object destructuring :
 
-let person = {
-    name: "Ironhacker",
-    age: 25,
-    favoriteMusic: "Metal"
-};
+// let person = {
+//     name: "Ironhacker",
+//     age: 25,
+//     favoriteMusic: "Metal"
+// };
 
-let { name, age, favoriteMusic } = person;
+// let { name, age, favoriteMusic } = person;
 
-console.log(`Hello, ${name}.`);
-console.log(`You are ${age} years old.`);
-console.log(`Your favorite music is ${favoriteMusic}.`);
+// console.log(`Hello, ${name}.`);
+// console.log(`You are ${age} years old.`);
+// console.log(`Your favorite music is ${favoriteMusic}.`);
 
 
 
 // it also works with nested objects:
 
-const person = {
-    name: "Ironhacker",
-    age: 25,
-    favoriteMusic: "Metal",
-    address: {
-        street: "Super Cool St",
-        number: 123,
-        city: "Miami"
-    }
-};
+// const person = {
+//     name: "Ironhacker",
+//     age: 25,
+//     favoriteMusic: "Metal",
+//     address: {
+//         street: "Super Cool St",
+//         number: 123,
+//         city: "Miami"
+//     }
+// };
 
-let {
-    name,
-    age,
-    favoriteMusic,
-    address
-} = person;
+// let {
+//     name,
+//     age,
+//     favoriteMusic,
+//     address
+// } = person;
 
 console.log(address.street); // <== Super Cool St
 
@@ -173,12 +173,7 @@ function rest(...numbers) {
 
 rest(3, 4, 5)
 
-
-
-
 // exercise : https://repl.it/@janRedmann/RestAndSpread
-
-
 
 // ES 6 Advanced 
 
@@ -331,3 +326,19 @@ async function getNumber() {
     }
 }
 getNumber();
+
+
+// ternary operator
+
+const isEvenOrOdd = (number) => {
+    // if (number % 2 === 0) {
+    //   return 'is even'
+    // } else {
+    //   return 'is odd'
+    // }
+    // ternary operator
+    //this is true ? do this : do another thing
+    return number % 2 === 0 ? 'is even' : 'is odd'
+}
+
+isEvenOrOdd(5)
